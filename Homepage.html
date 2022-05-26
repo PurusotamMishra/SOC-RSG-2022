@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Water+Brush&display=swap" rel="stylesheet">
+
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgb(218, 116, 13);
+    }
+    /* Styling for Menu bar */
+    .navbar{
+        background-color: crimson;
+        border-radius: 10px;
+        }
+    .navbar ul{
+        overflow: auto;
+    }
+    .navbar li{
+        float:left;
+        list-style: none;
+        padding: 13px 20px;
+    }
+    .navbar li a{
+        padding: 3px 3px;
+        text-decoration: none;
+        color: white;
+    }
+    .navbar li a:hover{
+        color: red;
+    } 
+    /* .container{
+         background-color: rgb(102, 0, 51);
+    } */
+
+    /*Styling for Home option on menu bar*/
+    /* Styling of Welcome note */
+    #welcome{
+            margin: 0px;
+            background-color: crimson;
+            text-align: center;
+            color: yellow;
+            border-radius: 5px;
+            font-size: 50px;
+            font-family: 'Oleo Script Swash Caps', cursive;
+
+            }
+
+    /* Styling for of text under home  */
+    #mys{
+        padding: 10px;
+            font-family: 'Lobster', cursive;
+            float: right; 
+            width: 60%;
+            font-size: 25px;
+            color: white;
+            }
+
+            /* styling of IIT Bombay link */
+    #mys a{
+            cursor: pointer;
+            color: orange;
+            text-decoration: none;
+        }
+    #mys a:hover{
+        color:red;
+    }
+
+    /* Image and text below it */
+    img{
+        width: 40%;
+        height: auto;
+        float: left; 
+    
+    }
+    #image{
+        color: white;
+        font-size: 8px;
+        font-family: cursive;
+        clear: both;
+    }
+
+    /* Age Calculator */
+    .base{
+        margin: 5px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .title{ 
+        margin: 5px;
+        padding: 10px;
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+    }
+    .enter{
+        padding: 10px;
+        font-family: 'Anton', sans-serif;
+    }
+    input[type=button]{  
+         width: 100px;
+         outline: none;  
+         border: none;  
+         border-radius: 2px;  
+         background-color: rgb(235, 12, 12);   
+         color: white;  
+         padding: 10px 10px;  
+         text-align: center;  
+         font-size: 20px;  
+        }  
+    input[type=button]:hover{  
+        background-color: rgb(11, 4, 70);  
+        cursor: pointer;
+    }
+    #age{ 
+          text-align: center;
+          display: block;  
+          margin: 10px;  
+          margin-top: 35px;  
+          padding: 10px;  
+          padding-bottom: 20px;  
+          overflow: hidden;  
+          font-family: verdana;  
+          font-size: 15px;  
+          font-weight: normal;  
+          line-height: 1.5;  
+          word-spacing: 2.7px;  
+          color: white;  
+ }
+    /* Reference that came under menu bar*/
+    .reference{
+        float: left;
+        width: 50%;
+        color: white;
+        
+    }
+    .reference ul a{
+        text-decoration: none;
+        color: white;
+    }
+    .reference ul a:hover{
+        color: black;
+        /* background-color: blue; */
+    }
+
+    /* Contact info that came under menu bar */
+    .contactinfo{
+        float: right;
+        width: 50%;
+        color: white;
+         
+    }
+    .contactinfo p a{
+        color: rgb(255, 238, 0);
+    }
+    .contactinfo p a:hover{
+        color: black;
+        /* background-color: blue; */
+    }
+    #headings{
+        color: red;
+        font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Menu bar -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#agesss">Age Calculator</a></li>
+                <li><a href="#refer">References</a></li>
+                <li><a href="#contact">Contact-info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <div class="container" id="Home">
+        <p id="welcome">Hello Visitors! Welcome to my First Webpage</p>
+        <p id="mys">I am Purusotam Mishra. I am studying Mechanical Engineering from <a href="https://www.iitb.ac.in/">IIT Bombay</a>. I am exploring about web development through SoC project. Under the same project, this webpage is result of week-1 task. </p> <br>
+        <img src="https://www.iitb.ac.in/sites/www.iitb.ac.in/files/styles/large/public/styles/gallery_item/public/MainBldg%20grey.jpg?itok=c3EYIrW4" alt="IITB image" class="images"> <br>
+        <p id="image">This is IIT Bomaby image taken from Ghatpokar Hills.</p>
+    </div>
+
+<hr color="black">
+
+<!-- Age Calculator -->
+<h3 id="headings"><u> Age Calculator</u></h3>
+
+<form>  
+    <div class="base" id="agesss">  
+     <div class="enter">    
+    </div>  
+   <div class="block">  
+    <p class="title">Date</p>  
+    <input type="text" name="date" id="date" placeholder="dd" required="required" minlength="1" maxlength="2" />  
+   </div>  
+   <div class="block">  
+    <p class="title">Month</p>  
+    <input type="text" name="month" id="month" placeholder="mm" required="required" minlength="1" maxlength="2" />  
+   </div>  
+   <div class="block">  
+    <p class="title">Year</p>  
+    <input type="text" name="year" id="year" placeholder="yyyy" required="required" minlength="4" maxlength="4" />  
+   </div>  
+   </div>  
+   <div class="base">  
+    <div class="enter">  
+    <input type="button" name="submit" value="Submit" onclick="age()" />  
+    </div>  
+   </div>  
+    <div id="age"></div>  
+   </form>
+    
+    
+    
+    <!-- References -->
+    <hr color="black">
+    <div class="reference" id="refer">
+        <h3 id="headings"><u> References</u></h3>
+        <!--In this section, I have kept some of the references used for making this webpage.-->
+        <ul>
+            <li><a href="https://www.w3schools.com/html/default.asp">HTML Tutorials</a></li>
+            <li><a href="https://www.w3schools.com/css/default.asp">CSS Tutorials</a></li>
+            <li><a href="https://www.w3schools.com/js/default.asp">JavaScript Tutorials</a></li>
+        </ul>
+
+
+    </div>
+<!-- Contact info -->
+    <div class="contactinfo" id="contact">
+        <h3 id="headings"><u>Contact-info </u></h3>
+        <p>
+            E-mail Id: <a href="mailto:purusotammishra63@gmail.com">purusotammishra63@gmail.com</a> <br>
+            Mobile: +91 6295 5017 52
+        </p>
+</body>
+
+
+
+
+
+<script>
+    function age() {  
+  var d1 = document.getElementById('date').value;  
+  var m1 = document.getElementById('month').value;  
+  var y1 = document.getElementById('year').value;  
+  var date = new Date();  
+  var d2 = date.getDate();  
+  var m2 = 1 + date.getMonth();  
+  var y2 = date.getFullYear();  
+  var month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];  
+  if(d1 > d2){  
+   d2 = d2 + month[m2 - 1];  
+   m2 = m2 - 1;  
+  }  
+  if(m1 > m2){  
+   m2 = m2 + 12;  
+   y2 = y2 - 1;  
+  }  
+  var d = d2 - d1;  
+  var m = m2 - m1;  
+  var y = y2 - y1;  
+  document.getElementById('age').innerHTML = 'Your Age is '+y+' Years '+m+' Months '+d+' Days';  
+ } 
+</script>
+</html>
